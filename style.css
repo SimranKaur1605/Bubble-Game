@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:"Gillroy";
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+#main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(155, 184, 155);
+}
+#panel
+{
+    overflow:hidden;
+    width: 80%;
+    height: 80%;
+    background-color: #fff;
+border-radius: 10px;
+}
+#ptop
+{
+    justify-content: space-between;
+    padding: 0px 30%;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    width: 100%;
+    height: 100px;
+    background-color: rgb(72, 104, 72);
+}
+.elem
+{
+    align-items: center;
+    gap: 20px;
+    display: flex;
+    
+}
+.elem h2 {
+font-weight: 500;
+font-size: 22px;
+}
+.box
+
+{
+    color:rgb(55,119,157);
+    font-weight:600 ;
+    font-size: 22px;
+padding: 10px 20px;
+background-color: #fff;
+border-radius: 5px;
+}
+#pbtm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 20px;
+    width: 100%;
+    height: calc(100% - 100px); /* Subtract the height of the top panel */
+    position: relative; /* Ensure it is positioned within its parent */
+}
+
+
+.bubble
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  width: 60px;  
+  height: 60px;
+  background-color: rgb(72, 104, 72);
+  color: #fff;
+  border-radius: 50%;
+  font-weight: 500;
+}
+.bubble:hover{
+    cursor: pointer;
+    background-color: rgb(50, 75, 50);
+}
+.game-over {
+    position: absolute; /* Absolutely position the Game Over text */
+    top: 50%; /* Center it vertically */
+    left: 50%; /* Center it horizontally */
+    transform: translate(-50%, -50%); /* Use transform to fully center */
+    font-size: 48px;
+    color: rgb(72, 104, 72);
+    text-align: center;
+}
